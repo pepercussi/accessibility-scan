@@ -19,28 +19,28 @@ This project is a web accessibility scanner that uses Puppeteer and axe-core to 
     npm install
     ```
 
-3. Create a [.env](http://_vscodecontentref_/0) file based on the [.env.example](http://_vscodecontentref_/1) file:
+3. Create a `.env` file based on the [.env.example](https://github.com/pepercussi/accessibility-scan/blob/main/.env.example) file:
     ```sh
     cp .env.example .env
     ```
 
-4. Update the [.env](http://_vscodecontentref_/2) file with the desired paths for the result file and URLs file.
+4. Update the `.env` file with the desired paths for the result file and URLs file.
 
 ## Usage
-1. Add the URLs you want to analyze in the [urls.txt](http://_vscodecontentref_/3) file, one URL per line.
+1. Add the URLs you want to analyze in the [urls.txt](https://github.com/pepercussi/accessibility-scan/blob/main/urls.txt) file, one URL per line.
 
 2. Run the scanner:
     ```sh
     node scan.js
     ```
 
-3. The results will be saved in the file specified in the [.env](http://_vscodecontentref_/4) file (default is `./results/my_result.json`).
+3. The results will be saved in the file specified in the `.env` file (If nothig is specified, the default is `./results/result.json`).
 
 ## Example
-Here is an example of the [.env](http://_vscodecontentref_/5) file:
+Here is an example of the `.env` file:
     ```env
     RESULT_FILE_PATH=./results/my_result.json
-    URLS_FILE_PATH=./my_urls.txt
+    URLS_FILE_PATH=./urls.txt
     ```
 
 The urls.txt file should contain the URLs to be analyzed, for example:

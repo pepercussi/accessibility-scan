@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "async": "^3.2.6",
+    "axe-core": "^4.10.2",
+    "dotenv": "^16.4.7",
+    "puppeteer": "^24.1.0"
+  }
+}
